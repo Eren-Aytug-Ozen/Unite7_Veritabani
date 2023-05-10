@@ -2,6 +2,7 @@ package com.example.unite7.Uyg3;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +17,8 @@ import com.example.unite7.R;
 import java.util.ArrayList;
 
 public class Uyg3 extends AppCompatActivity {
+
+    SQLiteDatabase database;
 
     Urun urun;
     ArrayList<Urun> urunler;
