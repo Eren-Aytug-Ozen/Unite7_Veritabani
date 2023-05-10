@@ -56,6 +56,20 @@ public class Uyg3 extends AppCompatActivity {
 
     private void getAllUrunler(){
         database = this.openOrCreateDatabase("Urun",MODE_PRIVATE,null);
-        Cursor cursor = database.rawQuery("Select * s")
+        Cursor cursor = database.rawQuery("SELECT * FROM urunler",null);
+        int kolonId = cursor.getColumnIndex("id");
+        int kolonUrunAdi = cursor.getColumnIndex("urunadi");
+        int kolonFiyat = cursor.getColumnIndex("fiyat");
+        int kolonAdet = cursor.getColumnIndex("adet");
+
+        while (cursor.moveToNext()){
+            int id = cursor.getInt(kolonId);
+            String urunAdi = cursor.getString(kolonUrunAdi);
+            double fiyat = cursor.getDouble(kolonFiyat);
+            long adet = cursor.getLong(kolonAdet);
+
+            urun = new Urun(id, urunAdi, fiyat, adet, R.drawable.resim_yok);
+        }
+        cursor.close();
     }
 }
