@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="uyg1">Uygulama 1(Kullanıcı Adı)</string>
-    <string name="uyg2">Uygulama 1(selam)</string>
+    <string name="app_name">Unite7</string>
+    <string name="uyg1_name">uygulama-1(Veri Kaydetme)</string>
+    <string name="uyg3_name">uygulama-1(100 den Buyuk)</string>
+    <string name="uyg4_name">uygulama-1(100 den Buyuk)</string>
+    <string name="uyg5_name">uygulama-1(100 den Buyuk)</string>
+    <string name="uyg6_name">uygulama-1(100 den Buyuk)</string>
+    <string name="uyg7_name">uygulama-1(100 den Buyuk)</string>
 </resources>
